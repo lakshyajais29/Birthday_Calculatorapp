@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="20dp"
+    android:gravity="center"
+    android:background="@drawable/birthdaybackground">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:elevation="8dp"
+        android:layout_centerInParent="true"
+        app:cardBackgroundColor="#00FFFFFF"
+        app:cardCornerRadius="15dp"
+        android:background="@android:color/transparent"
+        android:layout_height="400dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter your details"
+                android:layout_marginTop="20dp"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"/>
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="30dp"
+                android:hint="Name"
+                android:inputType="textPersonName"
+                android:layout_marginBottom="25dp" />
+
+            <EditText
+                android:id="@+id/dob"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="30dp"
+                android:textColor="@color/black"
+                android:layout_marginRight="30dp"
+                android:layout_height="wrap_content"
+                android:hint="Date of Birth (DD/MM/YYYY)"
+                android:inputType="date"
+                android:layout_marginBottom="25dp" />
+
+            <Button
+                android:id="@+id/btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:textSize="18sp"
+                android:layout_gravity="center_horizontal"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
